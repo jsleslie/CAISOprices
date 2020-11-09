@@ -59,3 +59,28 @@ extract_hourly_data(2017, 'SDG1')
 
 """
 ```
+
+## Output
+
+The raw downloaded csv files contain the following fields:
+
+- **INTERVALSTARTTIME_GMT** - *GMT Start Time*
+- **INTERVALENDTIME_GMT** - *GMT End Time*
+- **OPR_DT** - *Operating Date*
+- **OPR_HR**  - *Operating Hour*
+- **OPR_INTERVAL** - *Operating Interval*
+- **NODE_ID_XML** - *Node*
+- **NODE_ID** - *same as above*
+- **NODE** - *same as above*
+- **MARKET_RUN_ID** - *Market* 
+- **LMP_TYPE** - *Locational Marginal Price Type*
+- **XML_DATA_ITEM** - *Price Category*
+- **PNODE_RESMRID** - *Node*
+- **GRP_TYPE** -  *Unused*
+- **POS** - *Unused*
+- **MW** - *Price*
+- **GROUP** - *Group*
+
+The following chart was created using data from June 1st, 2019.
+
+<img src="img/sample_day.png" alt="SubLAP Map" width="600"/>

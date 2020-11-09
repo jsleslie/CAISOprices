@@ -18,3 +18,44 @@ The Sub-LAPs are spread across the 4 utility regions, as shown in the table belo
 | Southern California Edison  | 'SCEC', 'SCEN', 'SCEW', 'SCHD', 'SCLD', 'SCNW'                                                                                                        |
 | San Diego Gas & Electric    | 'SDG1'                                                                                                                                                |
 | Valley Electric Association | 'VEA'                                                                                                                                                 |
+
+## Tools
+
+1. **Hourly Price Extractor**
+
+```
+extract_hourly_data(year, nodes):
+"""
+Downloads and aggregates hourly energy prices for selected California Sub-LAPs a year of choice
+
+Parameters:
+year:  str
+
+Outputs:
+pandas.DataFrame
+
+Example:
+extract_hourly_data(2017, ['VEA'])
+
+"""
+```
+
+2. **5-minute Price Extractor**
+
+```
+extract_5min_data(year, node):
+"""
+Downloads Southern California 5-minute energy prices from CAISO's Oasis Portal for a year of choice
+and aggregates separate files into a single csv file
+
+Parameters:
+year:  str
+
+Outputs:
+pandas.DataFrame
+
+Example:
+extract_hourly_data(2017, 'SDG1')
+
+"""
+```
